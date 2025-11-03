@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>liteeeeeeee</title>
+
+  <!-- Tailwind via Browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-up { animation: fadeUp 0.6s ease-out forwards; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- ✅ Navbar (Discord button added) -->
+  <nav class="backdrop-blur-md bg-white/30 dark:bg-gray-800/30 shadow-lg border-b border-gray-300/20 dark:border-gray-700/20 fixed top-0 w-full z-20">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <span class="text-xl font-semibold tracking-tight">liteeeeeeee</span>
+
+      <!-- Right side: Discord button -->
+      <a href="https://discord.gg/pzygJPJSCG"
+         target="_blank"
+         class="px-3 py-1 rounded-xl bg-indigo-600 hover:bg-indigo-700 transition flex items-center gap-2 text-white">
+        Join Discord
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ✅ Main Content -->
+  <div class="flex items-center justify-center h-screen">
+    <div class="text-center space-y-6 fade-up pt-20">
+
+      <h1 class="text-6xl font-extrabold tracking-tight opacity-0 fade-up" style="animation-delay: .2s;">
+        yo
+      </h1>
+
+      <p class="opacity-0 fade-up tracking-wide text-lg text-gray-600 dark:text-gray-300" style="animation-delay:.4s;">
+        random shit
+      </p>
+
+      <!-- ✅ Buttons linking to other pages -->
+      <div class="space-x-4 opacity-0 fade-up" style="animation-delay: .6s;">
+
+ <!----       <a href="placeholder.html">
+          <button class="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:scale-105 hover:-translate-y-1 hover:shadow-lg transition-all duration-200">
+            Placeholder
+          </button>
+        </a>
+
+        <a href="placeholder.html">
+          <button class="px-6 py-3 rounded-xl bg-gray-300 text-gray-900 font-medium hover:scale-105 hover:-translate-y-1 hover:shadow-lg dark:bg-gray-700 dark:text-gray-200 transition-all duration-200">
+            Placeholder
+          </button>
+        </a>
+
+        <a href="placeholder.html">
+          <button class="px-6 py-3 rounded-xl border border-gray-500 font-medium hover:scale-105 hover:-translate-y-1 hover:shadow-lg dark:border-gray-400 transition-all duration-200">
+            Placeholder
+          </button>
+        </a 
+        -->
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
