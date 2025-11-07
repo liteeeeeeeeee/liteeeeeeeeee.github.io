@@ -24,7 +24,6 @@
   <div class="max-w-6xl mx-auto pt-32 fade-up px-6">
     <h1 class="text-4xl font-extrabold mb-6">Blu‑ray & DVD Collection</h1>
 
-    <!-- Filters -->
     <div class="flex flex-wrap gap-4 mb-6 items-center">
       <input id="searchInput" type="text" placeholder="Search movie..." class="px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 w-full sm:w-auto" />
 
@@ -37,7 +36,6 @@
       </select>
     </div>
 
-    <!-- List -->
     <div id="movieList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
   </div>
 
@@ -62,7 +60,6 @@
       const prevType = typeSelect.value;
       const prevCountry = countrySelect.value;
 
-      // Clear and rebuild (prevents duplicates)
       typeSelect.innerHTML = '<option value="">All Types</option>';
       countrySelect.innerHTML = '<option value="">All Countries</option>';
 
@@ -72,7 +69,6 @@
       types.forEach(type => typeSelect.insertAdjacentHTML('beforeend', `<option value="${type}">${type}</option>`));
       countries.forEach(country => countrySelect.insertAdjacentHTML('beforeend', `<option value="${country}">${country}</option>`));
 
-      // Restore selection if still present
       if ([...typeSelect.options].some(o => o.value === prevType)) typeSelect.value = prevType;
       if ([...countrySelect.options].some(o => o.value === prevCountry)) countrySelect.value = prevCountry;
 
@@ -114,7 +110,6 @@
         });
     }
 
-    // Attach listeners once
     document.addEventListener('DOMContentLoaded', () => {
       const typeSelect = document.getElementById("typeFilter");
       const countrySelect = document.getElementById("countryFilter");
@@ -129,3 +124,4 @@
   </script>
 </body>
 </html>
+
