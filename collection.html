@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Collection</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.6s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <nav class="backdrop-blur-md bg-white/30 dark:bg-gray-800/30 shadow-lg border-b border-gray-300/20 dark:border-gray-700/20 fixed top-0 w-full z-20">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-xl font-semibold tracking-tight">liteeeeeeee</span>
+      <a href="https://discord.gg/pzygJPJSCG" target="_blank" class="px-3 py-1 rounded-xl bg-indigo-600 hover:bg-indigo-700 transition flex items-center gap-2 text-white">Join Discord</a>
+    </div>
+  </nav>
+
+  <div class="max-w-6xl mx-auto pt-32 fade-up px-6">
+    <h1 class="text-4xl font-extrabold mb-6">Blu‑ray & DVD Collection</h1>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-4 mb-6 items-center">
+      <input id="searchInput" type="text" placeholder="Search movie..." class="px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 w-full sm:w-auto" />
+
+      <select id="typeFilter" class="px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700">
+        <option value="">All Types</option>
+      </select>
+
+      <select id="countryFilter" class="px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700">
+        <option value="">All Countries</option>
+      </select>
+    </div>
+
+    <!-- List -->
+    <div id="movieList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </div>
+
+  <script>
+    let COLLECTION = [];
+    let filtersInitialized = false;
+
+    async function loadData() {
+      if (!COLLECTION.length) {
+        const res = await fetch("collection.json");
+        COLLECTION = await res.json();
+      }
+      if (!filtersInitialized) populateFilters(COLLECTION);
+      render();
+    }
+
+    function populateFilters(data) {
+      const typeSelect = document.getElementById("typeFilter");
+      const countrySelect = document.getElementById("countryFilter");
+
+      // Preserve current selections
+      const prevType = typeSelect.value;
+      const prevCountry = countrySelect.value;
+
+      // Clear and rebuild (prevents duplicates)
+      typeSelect.innerHTML = '<option value="">All Types</option>';
+      countrySelect.innerHTML = '<option value="">All Countries</option>';
+
+      const types = [...new Set(data.map(item => item.type))].sort();
+      const countries = [...new Set(data.map(item => item.country))].sort();
+
+      types.forEach(type => typeSelect.insertAdjacentHTML('beforeend', `<option value="${type}">${type}</option>`));
+      countries.forEach(country => countrySelect.insertAdjacentHTML('beforeend', `<option value="${country}">${country}</option>`));
+
+      // Restore selection if still present
+      if ([...typeSelect.options].some(o => o.value === prevType)) typeSelect.value = prevType;
+      if ([...countrySelect.options].some(o => o.value === prevCountry)) countrySelect.value = prevCountry;
+
+      filtersInitialized = true;
+    }
+
+    function render() {
+      const typeFilter = document.getElementById("typeFilter").value;
+      const countryFilter = document.getElementById("countryFilter").value;
+      const searchInput = document.getElementById("searchInput");
+      const query = (searchInput?.value || "").toLowerCase();
+      const list = document.getElementById("movieList");
+
+      list.innerHTML = "";
+
+      COLLECTION
+        .filter(movie => (
+          (!typeFilter || movie.type === typeFilter) &&
+          (!countryFilter || movie.country === countryFilter) &&
+          (
+            !query ||
+            (movie.english || "").toLowerCase().includes(query) ||
+            (movie.finnish || "").toLowerCase().includes(query)
+          )
+        ))
+        .forEach(movie => {
+          const imgSrc = movie.image && movie.image.trim() ? movie.image : 'placeholder.jpg';
+          const titleEn = movie.english || '';
+          const titleFi = movie.finnish || '';
+          const date = movie.releaseDate || '';
+          const flag = movie.flag || '';
+          list.insertAdjacentHTML('beforeend', `
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-md border border-gray-300/40 dark:border-gray-700/40 fade-up">
+              <img src="${imgSrc}" alt="${titleEn}" class="w-full rounded-lg h-64 object-cover mb-3" />
+              <h2 class="font-semibold text-lg">${titleEn} / ${titleFi}</h2>
+              <p class="text-gray-600 dark:text-gray-300 text-sm mb-2">${date}</p>
+              <span class="text-xl">${flag}</span>
+            </div>`);
+        });
+    }
+
+    // Attach listeners once
+    document.addEventListener('DOMContentLoaded', () => {
+      const typeSelect = document.getElementById("typeFilter");
+      const countrySelect = document.getElementById("countryFilter");
+      const searchInput = document.getElementById("searchInput");
+
+      typeSelect.addEventListener("change", render);
+      countrySelect.addEventListener("change", render);
+      searchInput.addEventListener("input", render);
+
+      loadData();
+    });
+  </script>
+</body>
+</html>
