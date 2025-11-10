@@ -1455,5 +1455,14 @@
         "flag": "🇫🇮",
         "releaseDate": "",
         "image": "images/591a1f6d-b39b-42cd-82fd-98bce2f08353.jpg"
+    },
+                                                        {
+        "english": "The Hobbit: The Desolation of Smaug",
+        "finnish": "Hobitti: Smaugin autioittama maa",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2013",
+        "image": "images/6438044379754.webp"
     }
 ]
