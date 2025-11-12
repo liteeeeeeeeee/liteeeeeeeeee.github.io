@@ -350,15 +350,6 @@
         "image": "images/24642591-1-image.jpeg"
     },
     {
-        "english": "Guardians of the Galaxy",
-        "finnish": "",
-        "type": "DVD",
-        "country": "Finland",
-        "flag": "🇫🇮",
-        "releaseDate": "2014",
-        "image": "images/guardians-of-the-galaxy-dvd.jpeg"
-    },
-    {
         "english": "Batman Begins",
         "finnish": "",
         "type": "DVD",
@@ -1348,7 +1339,7 @@
         "releaseDate": "",
         "image": "images/027d5636-61d1-41ab-930a-02156c14da7e.jpg"
     },
-        {
+    {
         "english": "LEGO® Jurassic World: The Indominus Escape",
         "finnish": "LEGO® Jurassic World: Indominus rexin pako",
         "type": "DVD",
@@ -1357,7 +1348,7 @@
         "releaseDate": "",
         "image": "images/20250725_101301.jpg"
     },
-            {
+    {
         "english": "The LEGO Movie",
         "finnish": "LEGO Elokuva",
         "type": "DVD",
@@ -1366,7 +1357,7 @@
         "releaseDate": "",
         "image": "images/img_9704.jpg"
     },
-                {
+    {
         "english": "The LEGO Movie 2: Second Part",
         "finnish": "LEGO Elokuva 2",
         "type": "DVD",
@@ -1375,7 +1366,7 @@
         "releaseDate": "",
         "image": "images/the_lego_movie_2_the_second_part_nordic-46605860-.jpg"
     },
-                    {
+    {
         "english": "Ice Age: The Meltdown",
         "finnish": "Ice Age 2 – Jäätikkö sulaa",
         "type": "DVD",
@@ -1384,7 +1375,7 @@
         "releaseDate": "2006",
         "image": "images/1760347230388-136-FFF-1010-DVD-2-ETRK.jpg"
     },
-                        {
+    {
         "english": "101 Dalmatians",
         "finnish": "101 Dalmatialaista",
         "type": "DVD",
@@ -1393,7 +1384,7 @@
         "releaseDate": "",
         "image": "images/image (4).jpg"
     },
-                            {
+    {
         "english": "Ducktales - Part 2",
         "finnish": "Ankronikka - Osa 2",
         "type": "DVD",
@@ -1402,7 +1393,7 @@
         "releaseDate": "",
         "image": "images/8717418118174.webp"
     },
-                                {
+    {
         "english": "",
         "finnish": "The Joulukalenteri",
         "type": "DVD",
@@ -1411,7 +1402,7 @@
         "releaseDate": "",
         "image": "images/MV5BMWRiN2QxZmUtYzFiMC00ZGZkLThjNDktOGQ4ZDAyOTMzMWVmXkEyXkFqcGc@._V1_.jpg"
     },
-                                    {
+    {
         "english": "Little Brother, Big Trouble: A Christmas Adventure",
         "finnish": "Niko 2 – Lentäjäveljekset",
         "type": "DVD",
@@ -1420,7 +1411,7 @@
         "releaseDate": "",
         "image": "images/24984915-6420201115138-62af81573d60a552.jpeg"
     },
-                                        {
+    {
         "english": "",
         "finnish": "Aku Ankan Joulumanteli",
         "type": "DVD",
@@ -1429,7 +1420,7 @@
         "releaseDate": "",
         "image": "images/aku-ankan-joulumanteli-dvd.jpeg"
     },
-                                            {
+    {
         "english": "",
         "finnish": "Tiku ja Taku kiusankappaleina",
         "type": "DVD",
@@ -1438,7 +1429,7 @@
         "releaseDate": "",
         "image": "images/242e9266-2dfa-46ae-8d02-576bd8b95f2c.jpg"
     },
-                                                {
+    {
         "english": "Metallica - Cunning Stunts",
         "finnish": "",
         "type": "DVD",
@@ -1447,7 +1438,7 @@
         "releaseDate": "",
         "image": "images/602498702260_480x480.webp"
     },
-                                                    {
+    {
         "english": "",
         "finnish": "Peppi - 2",
         "type": "DVD",
@@ -1456,7 +1447,7 @@
         "releaseDate": "",
         "image": "images/591a1f6d-b39b-42cd-82fd-98bce2f08353.jpg"
     },
-                                                        {
+    {
         "english": "The Hobbit: The Desolation of Smaug",
         "finnish": "Hobitti: Smaugin autioittama maa",
         "type": "DVD",
@@ -1464,5 +1455,158 @@
         "flag": "🇫🇮",
         "releaseDate": "2013",
         "image": "images/6438044379754.webp"
+    },
+    {
+        "english": "Iron Man",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2008",
+        "image": "images/iron-man-dvd.jpeg"
+    },
+    {
+        "english": "The Incredible Hulk",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2008",
+        "image": "images/incredible-hulk-the-2008-dvd.jpg"
+    },
+    {
+        "english": "Iron Man 2",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2010",
+        "image": "images/iron-man-2-dvd-vg-m-toiminta-.jpg"
+    },
+    {
+        "english": "Thor",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2011",
+        "image": "images/878_366099548.jpg"
+    },
+    {
+        "english": "Captain America: The First Avenger",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2011",
+        "image": "images/7332431037755.webp"
+    },
+    {
+        "english": "The Avengers",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2012",
+        "image": "images/4_144033036.jpg"
+    },
+    {
+        "english": "Iron Man 3",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2013",
+        "image": "images/24639537-1-image.jpeg"
+    },
+    {
+        "english": "Thor: The Dark World",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2013",
+        "image": "images/thor-the-dark-world-dvd.jpeg"
+    },
+    {
+        "english": "Captain America: The Winter Soldier",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2014",
+        "image": "images/captain-america-the-winter-soldier-dvd.jpeg"
+    },
+    {
+        "english": "Guardians of the Galaxy",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮 (x2)",
+        "releaseDate": "2014",
+        "image": "images/guardians-of-the-galaxy-dvd (1).jpeg"
+    },
+        {
+        "english": "The Avengers: Age of Ultron",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2015",
+        "image": "images/17099333981644423078IMG0091jpg.jpg"
+    },
+            {
+        "english": "Ant-Man",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2015",
+        "image": "images/Ant-Man-2015.jpg"
+    },
+                {
+        "english": "Captain America: Civil War",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2016",
+        "image": "images/24630999-1-image_1200_630.jpg"
+    },
+                    {
+        "english": "Doctor Strange",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2016",
+        "image": "images/doctor-strange-dvd.jpeg"
+    },
+                        {
+        "english": "Guardians of the Galaxy: Vol. 2",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2017",
+        "image": "images/guardians-of-the-galaxy-vol-2-2017-dvd.webp"
+    },
+                            {
+        "english": "Spider-Man: Homecoming",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2017",
+        "image": "images/176490642-309370030-11453-org.jpg"
+    },
+                                {
+        "english": "Avengers: Infinity War",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2018",
+        "image": "images/24641211-1-image_1200_630.webp"
     }
 ]
