@@ -1546,7 +1546,7 @@
         "releaseDate": "2014",
         "image": "images/guardians-of-the-galaxy-dvd (1).jpeg"
     },
-        {
+    {
         "english": "The Avengers: Age of Ultron",
         "finnish": "",
         "type": "DVD",
@@ -1555,7 +1555,7 @@
         "releaseDate": "2015",
         "image": "images/17099333981644423078IMG0091jpg.jpg"
     },
-            {
+    {
         "english": "Ant-Man",
         "finnish": "",
         "type": "DVD",
@@ -1564,7 +1564,7 @@
         "releaseDate": "2015",
         "image": "images/Ant-Man-2015.jpg"
     },
-                {
+    {
         "english": "Captain America: Civil War",
         "finnish": "",
         "type": "DVD",
@@ -1573,7 +1573,7 @@
         "releaseDate": "2016",
         "image": "images/24630999-1-image_1200_630.jpg"
     },
-                    {
+    {
         "english": "Doctor Strange",
         "finnish": "",
         "type": "DVD",
@@ -1582,7 +1582,7 @@
         "releaseDate": "2016",
         "image": "images/doctor-strange-dvd.jpeg"
     },
-                        {
+    {
         "english": "Guardians of the Galaxy: Vol. 2",
         "finnish": "",
         "type": "DVD",
@@ -1591,7 +1591,7 @@
         "releaseDate": "2017",
         "image": "images/guardians-of-the-galaxy-vol-2-2017-dvd.webp"
     },
-                            {
+    {
         "english": "Spider-Man: Homecoming",
         "finnish": "",
         "type": "DVD",
@@ -1600,7 +1600,16 @@
         "releaseDate": "2017",
         "image": "images/176490642-309370030-11453-org.jpg"
     },
-                                {
+        {
+        "english": "Black Panther",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2018",
+        "image": "images/24640899-1-image.jpeg"
+    },
+    {
         "english": "Avengers: Infinity War",
         "finnish": "",
         "type": "DVD",
@@ -1608,5 +1617,41 @@
         "flag": "🇫🇮",
         "releaseDate": "2018",
         "image": "images/24641211-1-image_1200_630.webp"
+    },
+        {
+        "english": "Avengers: Endgame",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2019",
+        "image": "images/dv_web_D180001002268363.jpg"
+    },
+        {
+        "english": "Lost - The Complete Third Season",
+        "finnish": "Lost - Kausi 3",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2007",
+        "image": "images/8717418128036.webp"
+    },
+            {
+        "english": "The Matrix Revolutions",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2003",
+        "image": "images/f8f570f3-bc0c-475a-834e-ad4b0c9d56a6.jpg"
+    },
+                {
+        "english": "The Animatrix",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2003",
+        "image": "images/7321944373160.webp"
     }
 ]
