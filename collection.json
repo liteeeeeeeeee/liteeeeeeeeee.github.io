@@ -1653,5 +1653,32 @@
         "flag": "🇫🇮",
         "releaseDate": "2003",
         "image": "images/7321944373160.webp"
+    },
+                    {
+        "english": "DC Comics Collection",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2019 (ordered)",
+        "image": "images/252912_front.jpg"
+    },
+                        {
+        "english": "Batman v Superman: Dawn of Justice",
+        "finnish": "",
+        "type": "Blu-ray 3D",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2016",
+        "image": "images/149130_front.jpg"
+    },
+        {
+        "english": "Dexter: The Complete Series",
+        "finnish": "",
+        "type": "DVD",
+        "country": "United Kingdom",
+        "flag": "🇬🇧 (ordered)",
+        "releaseDate": "2013",
+        "image": "images/26738438-11453-org.jpg"
     }
 ]
