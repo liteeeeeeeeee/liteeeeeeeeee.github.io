@@ -1680,5 +1680,68 @@
         "flag": "🇬🇧 (ordered)",
         "releaseDate": "2013",
         "image": "images/26738438-11453-org.jpg"
+    },
+                        {
+        "english": "Pirates of the Caribbean 1-5",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2017 (ordered)",
+        "image": "images/pirates_of_the_caribbean_1-5_blu-ray_nordic-40469573-.jpg"
+    },
+                            {
+        "english": "Star Wars: Episode I - The Phantom Menace",
+        "finnish": "Star Wars I: Pimeä Uhka",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "1999 (ordered)",
+        "image": "images/17556319166420614624050starwarsipimeauhkac3f03djpg.jpg"
+    },
+                                {
+        "english": "Star Wars: Episode II - Attack of the Clones",
+        "finnish": "Star Wars I: Pimeä Uhka",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2002 (ordered)",
+        "image": "images/star-wars-ii-kloonien-hyokkays-dvd-vg-m-seikkailu-sci-fi-.jpg"
+    },
+                                    {
+        "english": "Star Wars: Episode III - Revenge of the Sith",
+        "finnish": "Star Wars I: Pimeä Uhka",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2005 (ordered)",
+        "image": "images/dvd-elokuva-star-wars-iii-sithin-kosto-2dvd-kansi-ex-levy-ex-kaeytetty-dvd.webp"
+    },
+                                        {
+        "english": "Star Wars: Episode IV - A New Hope",
+        "finnish": "Star Wars IV: Uusi toivo",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "1977 (ordered)",
+        "image": "images/17120793740000000000007starwars episodeivuusitoivo tahtiensota d31be9jpg.jpg"
+    },
+                                            {
+        "english": "Star Wars: Episode V - The Empire Strikes Back",
+        "finnish": "Star Wars V: Imperiumin vastaisku",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "1980 (ordered)",
+        "image": "images/0_1078674027.jpg"
+    },
+                                                {
+        "english": "Star Wars: Episode VI - Return of the Jedi",
+        "finnish": "Star Wars V: Imperiumin vastaisku",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "1983 (ordered)",
+        "image": "images/Star-Wars-Return-of-the-Jedi.jpg"
     }
 ]
