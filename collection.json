@@ -1687,7 +1687,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "2017 (ordered)",
+        "releaseDate": "2017",
         "image": "images/pirates_of_the_caribbean_1-5_blu-ray_nordic-40469573-.jpg"
     },
                             {
@@ -1696,7 +1696,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "1999 (ordered)",
+        "releaseDate": "1999",
         "image": "images/17556319166420614624050starwarsipimeauhkac3f03djpg.jpg"
     },
                                 {
@@ -1705,7 +1705,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "2002 (ordered)",
+        "releaseDate": "2002",
         "image": "images/star-wars-ii-kloonien-hyokkays-dvd-vg-m-seikkailu-sci-fi-.jpg"
     },
                                     {
@@ -1714,7 +1714,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "2005 (ordered)",
+        "releaseDate": "2005",
         "image": "images/dvd-elokuva-star-wars-iii-sithin-kosto-2dvd-kansi-ex-levy-ex-kaeytetty-dvd.webp"
     },
                                         {
@@ -1723,7 +1723,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "1977 (ordered)",
+        "releaseDate": "1977",
         "image": "images/17120793740000000000007starwars episodeivuusitoivo tahtiensota d31be9jpg.jpg"
     },
                                             {
@@ -1732,7 +1732,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "1980 (ordered)",
+        "releaseDate": "1980",
         "image": "images/0_1078674027.jpg"
     },
                                                 {
@@ -1741,7 +1741,8 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "1983 (ordered)",
+        "releaseDate": "1983",
         "image": "images/Star-Wars-Return-of-the-Jedi.jpg"
     }
 ]
+
