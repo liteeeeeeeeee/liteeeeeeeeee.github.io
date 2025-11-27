@@ -1660,7 +1660,7 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "2019 (ordered)",
+        "releaseDate": "2019",
         "image": "images/252912_front.jpg"
     },
                         {
@@ -1678,7 +1678,7 @@
         "type": "DVD",
         "country": "United Kingdom",
         "flag": "🇬🇧",
-        "releaseDate": "2013 (ordered)",
+        "releaseDate": "2013",
         "image": "images/26738438-11453-org.jpg"
     },
                         {
@@ -1745,4 +1745,5 @@
         "image": "images/Star-Wars-Return-of-the-Jedi.jpg"
     }
 ]
+
 
