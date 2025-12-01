@@ -1660,13 +1660,13 @@
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
-        "releaseDate": "2019",
+        "releaseDate": "2019 (ordered)",
         "image": "images/252912_front.jpg"
     },
                         {
         "english": "Batman v Superman: Dawn of Justice",
         "finnish": "",
-        "type": "Blu-ray 3D",
+        "type": "Blu-ray",
         "country": "Finland",
         "flag": "🇫🇮",
         "releaseDate": "2016",
@@ -1737,13 +1737,74 @@
     },
                                                 {
         "english": "Star Wars: Episode VI - Return of the Jedi",
-        "finnish": "Star Wars V: Imperiumin vastaisku",
+        "finnish": "Star Wars VI: Jedin paluu",
         "type": "DVD",
         "country": "Finland",
         "flag": "🇫🇮",
         "releaseDate": "1983",
         "image": "images/Star-Wars-Return-of-the-Jedi.jpg"
+    },
+                            {
+        "english": "The Angry Birds Movie",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2016",
+        "image": "images/156036_front.jpg"
+    },
+                                {
+        "english": "LEGO: The Adventures of Clutch Powers",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2015",
+        "image": "images/124547_front.jpg"
+    },
+                                    {
+        "english": "Vikings: The Complete First Season",
+        "finnish": "Vikings: Kausi 1",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2013",
+        "image": "images/80085_front.jpg"
+    },
+                                        {
+        "english": "Interstellar",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2015",
+        "image": "images/115337_front.jpg"
+    },
+                                            {
+        "english": "Transformers: 1-5",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2017",
+        "image": "images/188794_front.jpg"
+    },
+                                                {
+        "english": "Dawn of the Planet of the Apes",
+        "finnish": "Apinoiden planeetan vallankumous",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2014",
+        "image": "images/109071_front.jpg"
+    },
+                                                    {
+        "english": "Shrek",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2001",
+        "image": "images/6_1139415399.jpg"
     }
 ]
-
-
