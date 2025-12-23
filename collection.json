@@ -242,11 +242,47 @@
         "image": "images/1114619.jpg"
     },
     {
+        "english": "Harry Potter and the Chamber of Secrets",
+        "finnish": "Harry Potter ja salaisuuksien kammio",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮 (x2)",
+        "releaseDate": "2002",
+        "image": "images/1765362261606-1211-DVD-3-ETRK-112.jpg"
+    },
+    {
+        "english": "Harry Potter and the Prisoner of Azkaban",
+        "finnish": "Harry Potter ja Azkabanin vanki",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮 (x2)",
+        "releaseDate": "2003",
+        "image": "images/7321944284459.webp"
+    },
+    {
+        "english": "Harry Potter and the Goblet of Fire",
+        "finnish": "Harry Potter ja liekehtivä pikari",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2005",
+        "image": "images/7321944586096.webp"
+    },
+    {
+        "english": "Harry Potter and and the Order of the Phoenix",
+        "finnish": "Harry Potter ja Feeniksin kilta",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2007",
+        "image": "images/dvd-elokuva-dvd-harry-potter-ja-feeniksin-kilta-2dvd-kansi-ex-levy-g-kaeytetty-dvd.webp"
+    },
+    {
         "english": "Harry Potter and the Half-Blood Prince",
         "finnish": "Harry Potter ja puolivelinen prinssi",
         "type": "DVD",
         "country": "Finland",
-        "flag": "🇫🇮",
+        "flag": "🇫🇮 (x2)",
         "releaseDate": "2009",
         "image": "images/169834550015958135581508424421puoliverinenprinssi2001jpg.jpg"
     },
@@ -417,7 +453,7 @@
         "finnish": "Taru sormusten herrasta: Kaksi tornia",
         "type": "DVD",
         "country": "Finland",
-        "flag": "🇫🇮",
+        "flag": "🇫🇮 (x2)",
         "releaseDate": "2002",
         "image": "images/17183083756420614637753tarusormustenherrastakaksitornia3456eejpg.jpg"
     },
@@ -429,6 +465,15 @@
         "flag": "🇫🇮",
         "releaseDate": "2003",
         "image": "images/lord_of_the_rings_the_return_of_the_king_theatrical_cut_nord-43043791-.jpg"
+    },
+    {
+        "english": "The Lord of the Rings: Return of the King",
+        "finnish": "Taru sormusten herrasta: Kuninkaan paluu",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2003",
+        "image": "images/1759314556169-119-FFF-1909-DVD-1-RK.jpgg"
     },
     {
         "english": "The Hobbit: An Unexpected Journey",
@@ -1600,7 +1645,7 @@
         "releaseDate": "2017",
         "image": "images/176490642-309370030-11453-org.jpg"
     },
-        {
+    {
         "english": "Black Panther",
         "finnish": "",
         "type": "DVD",
@@ -1618,7 +1663,7 @@
         "releaseDate": "2018",
         "image": "images/24641211-1-image_1200_630.webp"
     },
-        {
+    {
         "english": "Avengers: Endgame",
         "finnish": "",
         "type": "DVD",
@@ -1627,7 +1672,7 @@
         "releaseDate": "2019",
         "image": "images/dv_web_D180001002268363.jpg"
     },
-        {
+    {
         "english": "Lost - The Complete Third Season",
         "finnish": "Lost - Kausi 3",
         "type": "DVD",
@@ -1636,7 +1681,7 @@
         "releaseDate": "2007",
         "image": "images/8717418128036.webp"
     },
-            {
+    {
         "english": "The Matrix Revolutions",
         "finnish": "",
         "type": "DVD",
@@ -1645,7 +1690,7 @@
         "releaseDate": "2003",
         "image": "images/f8f570f3-bc0c-475a-834e-ad4b0c9d56a6.jpg"
     },
-                {
+    {
         "english": "The Animatrix",
         "finnish": "",
         "type": "DVD",
@@ -1654,7 +1699,7 @@
         "releaseDate": "2003",
         "image": "images/7321944373160.webp"
     },
-                    {
+    {
         "english": "DC Comics Collection",
         "finnish": "",
         "type": "DVD",
@@ -1663,7 +1708,7 @@
         "releaseDate": "2019 (ordered)",
         "image": "images/252912_front.jpg"
     },
-                        {
+    {
         "english": "Batman v Superman: Dawn of Justice",
         "finnish": "",
         "type": "Blu-ray",
@@ -1672,7 +1717,7 @@
         "releaseDate": "2016",
         "image": "images/149130_front.jpg"
     },
-        {
+    {
         "english": "Dexter: The Complete Series",
         "finnish": "",
         "type": "DVD",
@@ -1681,7 +1726,7 @@
         "releaseDate": "2013",
         "image": "images/26738438-11453-org.jpg"
     },
-                        {
+    {
         "english": "Pirates of the Caribbean 1-5",
         "finnish": "",
         "type": "DVD",
@@ -1690,7 +1735,7 @@
         "releaseDate": "2017",
         "image": "images/pirates_of_the_caribbean_1-5_blu-ray_nordic-40469573-.jpg"
     },
-                            {
+    {
         "english": "Star Wars: Episode I - The Phantom Menace",
         "finnish": "Star Wars I: Pimeä Uhka",
         "type": "DVD",
@@ -1699,7 +1744,7 @@
         "releaseDate": "1999",
         "image": "images/17556319166420614624050starwarsipimeauhkac3f03djpg.jpg"
     },
-                                {
+    {
         "english": "Star Wars: Episode II - Attack of the Clones",
         "finnish": "Star Wars II: Kloonien hyökkäys",
         "type": "DVD",
@@ -1708,7 +1753,7 @@
         "releaseDate": "2002",
         "image": "images/star-wars-ii-kloonien-hyokkays-dvd-vg-m-seikkailu-sci-fi-.jpg"
     },
-                                    {
+    {
         "english": "Star Wars: Episode III - Revenge of the Sith",
         "finnish": "Star Wars III: Sithin kosto",
         "type": "DVD",
@@ -1717,7 +1762,7 @@
         "releaseDate": "2005",
         "image": "images/dvd-elokuva-star-wars-iii-sithin-kosto-2dvd-kansi-ex-levy-ex-kaeytetty-dvd.webp"
     },
-                                        {
+    {
         "english": "Star Wars: Episode IV - A New Hope",
         "finnish": "Star Wars IV: Uusi toivo",
         "type": "DVD",
@@ -1726,7 +1771,7 @@
         "releaseDate": "1977",
         "image": "images/17120793740000000000007starwars episodeivuusitoivo tahtiensota d31be9jpg.jpg"
     },
-                                            {
+    {
         "english": "Star Wars: Episode V - The Empire Strikes Back",
         "finnish": "Star Wars V: Imperiumin vastaisku",
         "type": "DVD",
@@ -1735,7 +1780,7 @@
         "releaseDate": "1980",
         "image": "images/0_1078674027.jpg"
     },
-                                                {
+    {
         "english": "Star Wars: Episode VI - Return of the Jedi",
         "finnish": "Star Wars VI: Jedin paluu",
         "type": "DVD",
@@ -1744,7 +1789,7 @@
         "releaseDate": "1983",
         "image": "images/Star-Wars-Return-of-the-Jedi.jpg"
     },
-                            {
+    {
         "english": "The Angry Birds Movie",
         "finnish": "",
         "type": "Blu-ray",
@@ -1753,7 +1798,7 @@
         "releaseDate": "2016",
         "image": "images/156036_front.jpg"
     },
-                                {
+    {
         "english": "LEGO: The Adventures of Clutch Powers",
         "finnish": "",
         "type": "Blu-ray",
@@ -1762,7 +1807,7 @@
         "releaseDate": "2015",
         "image": "images/124547_front.jpg"
     },
-                                    {
+    {
         "english": "Vikings: The Complete First Season",
         "finnish": "Vikings: Kausi 1",
         "type": "Blu-ray",
@@ -1771,7 +1816,7 @@
         "releaseDate": "2013",
         "image": "images/80085_front.jpg"
     },
-                                        {
+    {
         "english": "Interstellar",
         "finnish": "",
         "type": "Blu-ray",
@@ -1780,7 +1825,7 @@
         "releaseDate": "2015",
         "image": "images/115337_front.jpg"
     },
-                                            {
+    {
         "english": "Transformers: 1-5",
         "finnish": "",
         "type": "Blu-ray",
@@ -1789,7 +1834,7 @@
         "releaseDate": "2017",
         "image": "images/188794_front.jpg"
     },
-                                                {
+    {
         "english": "Dawn of the Planet of the Apes",
         "finnish": "Apinoiden planeetan vallankumous",
         "type": "Blu-ray",
@@ -1798,7 +1843,7 @@
         "releaseDate": "2014",
         "image": "images/109071_front.jpg"
     },
-                                                    {
+    {
         "english": "Shrek",
         "finnish": "",
         "type": "Blu-ray",
@@ -1806,5 +1851,50 @@
         "flag": "🇫🇮",
         "releaseDate": "2001",
         "image": "images/6_1139415399.jpg"
+    },
+    {
+        "english": "Fast & Furious",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2009",
+        "image": "images/46869_front.jpg"
+    },
+    {
+        "english": "2 Fast 2 Furious",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2009",
+        "image": "images/46871_front.jpg"
+    },
+    {
+        "english": "Despicable Me",
+        "finnish": "Itse ilkimys",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2010",
+        "image": "images/343175_front.jpg"
+    },
+    {
+        "english": "Star Wars: The Force Awakens",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2016",
+        "image": "images/146156_front.jpg"
+    },
+    {
+        "english": "Hannibal",
+        "finnish": "",
+        "type": "DVD",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2001",
+        "image": "images/b1bdff0b-c43c-4563-afba-1a03e0994f06.jpg"
     }
 ]
