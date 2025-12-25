@@ -1896,5 +1896,23 @@
         "flag": "🇫🇮",
         "releaseDate": "2001",
         "image": "images/b1bdff0b-c43c-4563-afba-1a03e0994f06.jpg"
+    },
+    {
+        "english": "Transformers: One",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2024",
+        "image": "images/94074_front.jpg"
+    },
+    {
+        "english": "Mission: Impossible - The Final Reckoning",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮",
+        "releaseDate": "2025",
+        "image": "images/143021_front.jpg"
     }
 ]
