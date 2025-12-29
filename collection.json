@@ -1914,5 +1914,140 @@
         "flag": "🇫🇮",
         "releaseDate": "2025",
         "image": "images/143021_front.jpg"
+    },
+    {
+        "english": "Oppenheimer",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2023",
+        "image": "images/391893_front.jpg"
+    },
+    {
+        "english": "The LEGO Batman Movie",
+        "finnish": "LEGO Batman Elokuva",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2017",
+        "image": "images/173404_front.jpg"
+    },
+    {
+        "english": "Back to the Future Trilogy",
+        "finnish": "Paluu tulevaisuuteen trilogia",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2012",
+        "image": "images/78915_front.jpg"
+    },
+    {
+        "english": "Dune: 2-Film Collection",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2024",
+        "image": "images/356582_front.jpg"
+    },
+    {
+        "english": "Planet of the Apes Trilogy",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2017",
+        "image": "images/188495_front.jpg"
+    },
+    {
+        "english": "Rambo: First Blood",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2025",
+        "image": "images/391149_front.jpg"
+    },
+    {
+        "english": "Kingdom of the Planet of the Apes",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2024",
+        "image": "images/360552_front.jpg"
+    },
+    {
+        "english": "Home Alone",
+        "finnish": "Yksin kotona",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2009",
+        "image": "images/91291_front.jpg"
+    },
+    {
+        "english": "Home Alone 2: Lost in New York",
+        "finnish": "Yksin kotona 2: Eksynyt New Yorkissa",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2009",
+        "image": "images/116667_front.jpg"
+    },
+    {
+        "english": "The Meg",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2018",
+        "image": "images/212233_front.jpg"
+    },
+    {
+        "english": "Puss in Boots: The Last Wish",
+        "finnish": "Saapasjalkakissa: Viimeinen toivomus",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2023",
+        "image": "images/329703_front.jpg"
+    },
+    {
+        "english": "Gran Turismo",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2023",
+        "image": "images/341470_front.jpg"
+    },
+    {
+        "english": "Mr. Robot - The Complete Series",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2020",
+        "image": "images/261930_front.jpg"
+    },
+    {
+        "english": "Indiana Jones: 4-Movie Collection",
+        "finnish": "",
+        "type": "Blu-ray",
+        "country": "Finland",
+        "flag": "🇫🇮 (ordered)",
+        "releaseDate": "2023",
+        "image": "images/347125_front.jpg"
+    },
+    {
+        "english": "Terminator 2: Judgement Day",
+        "finnish": "Terminator 2 – Tuomion päivä",
+        "type": "Blu-ray",
+        "country": "United Kingdom",
+        "flag": "🇬🇧 (ordered)",
+        "releaseDate": "2017",
+        "image": "images/183954_front.jpg"
     }
 ]
