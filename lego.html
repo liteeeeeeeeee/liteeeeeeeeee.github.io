@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lego 3D Viewer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        colors: {
+          ink: { 950: '#03060d', 900: '#070b18', 800: '#0c1226', 700: '#121a36' },
+          azure: { 400: '#5aa9ff', 500: '#2f8bff', 600: '#1f6df0', 700: '#1556c7' },
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-ink-950 text-slate-100 font-sans antialiased overflow-x-hidden">
+
+<div class="fixed inset-0 -z-10 pointer-events-none">
+  <div class="absolute inset-0 bg-gradient-to-br from-ink-950 via-ink-900 to-black"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="absolute inset-0 grid-bg opacity-[0.05]"></div>
+</div>
+
+<nav class="sticky top-0 z-50 backdrop-blur-xl bg-ink-950/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="group flex items-center gap-2.5">
+      <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-azure-400 to-azure-700 grid place-items-center shadow-lg shadow-azure-600/30 group-hover:scale-110 transition-transform duration-300">
+        <span class="block w-3 h-3 bg-ink-950 rounded-sm rotate-45"></span>
+      </span>
+      <span class="font-semibold tracking-tight text-lg">liteeeeeeeeee</span>
+    </a>
+    <div class="flex items-center gap-1 text-sm">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="collection.html" class="nav-link">Collection</a>
+      <a href="lego.html" class="nav-link nav-active">LEGO 3D Viewer</a>
+    </div>
+  </div>
+</nav>
+
+<section class="max-w-7xl mx-auto px-6 pt-16 md:pt-20 pb-8">
+  <div class="reveal">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-azure-500/10 border border-azure-500/20 text-azure-400 text-xs font-medium mb-6">
+      <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      3D Viewer
+    </div>
+  </div>
+  <h1 class="reveal reveal-2 text-4xl md:text-6xl font-extrabold tracking-tighter">
+    Lego <span class="bg-gradient-to-r from-azure-400 to-azure-700 bg-clip-text text-transparent">3D</span> Viewer.
+  </h1>
+  <p class="reveal reveal-3 mt-4 text-slate-400 max-w-2xl">Enter a set number to load its 3D model.</p>
+</section>
+
+<!-- Controls -->
+<section class="max-w-7xl mx-auto px-6 pb-6">
+  <form id="loadForm" class="reveal reveal-4 flex flex-col md:flex-row gap-4 md:items-end" autocomplete="off">
+    <div class="flex-1 max-w-md">
+      <label class="block text-xs uppercase tracking-widest text-slate-500 mb-2">Set Number</label>
+      <input id="setInput" type="text" inputmode="numeric" placeholder="e.g. 76989" class="input-plain" />
+    </div>
+    <div>
+      <label class="block text-xs uppercase tracking-widest text-slate-500 mb-2">Variant</label>
+      <div class="toggle" role="tablist">
+        <button type="button" id="modeStatic" class="active" data-mode="static">Static</button>
+        <button type="button" id="modeAnim" data-mode="animated">Animated</button>
+      </div>
+    </div>
+    <div class="md:ml-auto flex gap-3">
+      <button type="submit" class="btn-primary">
+        Load Model
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+      <button type="button" id="resetBtn" class="btn-ghost">Reset View</button>
+    </div>
+  </form>
+  <div id="status" class="reveal reveal-5 mt-4"></div>
+</section>
+
+<!-- Viewer -->
+<section class="max-w-7xl mx-auto px-6 pb-16">
+  <div class="reveal reveal-6 viewer-frame">
+    <model-viewer
+      id="viewer"
+      camera-controls
+      touch-action="pan-y"
+      interaction-prompt="none"
+      shadow-intensity="1.2"
+      shadow-softness="0.8"
+      exposure="1.05"
+      environment-image="neutral"
+      auto-rotate-delay="2500"
+      style="--progress-bar-color: transparent;">
+    </model-viewer>
+
+    <div id="overlay" class="viewer-overlay">
+      <div>
+        <svg class="w-14 h-14 mx-auto mb-4 text-azure-400 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <p class="text-slate-300 text-lg font-semibold">Enter a set number above</p>
+        <p class="text-slate-500 text-sm mt-2">Then hit Load Model to view it in 3D.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tip strip -->
+  <div class="mt-6 grid sm:grid-cols-3 gap-4 text-sm">
+    <div class="flex items-start gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+      <div class="w-8 h-8 rounded-lg bg-azure-500/10 grid place-items-center text-azure-400 shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 3v9l5 3"/></svg>
+      </div>
+      <div><p class="text-slate-300 font-medium">Orbit</p><p class="text-slate-500 text-xs mt-0.5">Click + drag to rotate around the model.</p></div>
+    </div>
+    <div class="flex items-start gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+      <div class="w-8 h-8 rounded-lg bg-azure-500/10 grid place-items-center text-azure-400 shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4M8 11h6M11 8v6"/></svg>
+      </div>
+      <div><p class="text-slate-300 font-medium">Zoom</p><p class="text-slate-500 text-xs mt-0.5">Scroll or pinch to zoom in and out.</p></div>
+    </div>
+    <div class="flex items-start gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+      <div class="w-8 h-8 rounded-lg bg-azure-500/10 grid place-items-center text-azure-400 shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+      </div>
+      <div><p class="text-slate-300 font-medium">Pan</p><p class="text-slate-500 text-xs mt-0.5">Right-click drag (or two-finger drag) to pan.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-white/5 py-8">
+  <div class="max-w-7xl mx-auto px-6 text-sm text-slate-500 flex justify-between flex-wrap gap-3">
+    <span>© <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+(() => {
+  const form = document.getElementById('loadForm');
+  const setInput = document.getElementById('setInput');
+  const viewer = document.getElementById('viewer');
+  const overlay = document.getElementById('overlay');
+  const status = document.getElementById('status');
+  const resetBtn = document.getElementById('resetBtn');
+  const modeStatic = document.getElementById('modeStatic');
+  const modeAnim = document.getElementById('modeAnim');
+
+  let mode = 'static';
+
+  const setMode = (m) => {
+    mode = m;
+    modeStatic.classList.toggle('active', m === 'static');
+    modeAnim.classList.toggle('active', m === 'animated');
+  };
+  modeStatic.addEventListener('click', () => setMode('static'));
+  modeAnim.addEventListener('click', () => setMode('animated'));
+
+  const showStatus = (kind, html) => {
+    status.innerHTML = `<div class="msg msg-${kind}">${html}</div>`;
+  };
+  const clearStatus = () => { status.innerHTML = ''; };
+
+  const showOverlay = (html) => {
+    overlay.classList.remove('hidden');
+    overlay.innerHTML = `<div>${html}</div>`;
+  };
+  const hideOverlay = () => overlay.classList.add('hidden');
+
+  const buildUrl = (setNumber, variant) =>
+    `https://animation.kids.lego.com/${encodeURIComponent(setNumber)}/${variant}.glb`;
+
+  // HEAD-check the file. Fall back to GET if HEAD is blocked.
+  async function fileExists(url) {
+    try {
+      const r = await fetch(url, { method: 'HEAD' });
+      if (r.ok) return true;
+      if (r.status === 404) return false;
+    } catch (_) { /* fall through */ }
+    try {
+      const r = await fetch(url, { method: 'GET' });
+      return r.ok;
+    } catch (_) { return false; }
+  }
+
+  async function loadSet(setNumber) {
+    clearStatus();
+    showOverlay(`<div class="spinner mx-auto mb-4"></div><p class="text-slate-300 font-medium">Loading set ${setNumber}…</p><p class="text-slate-500 text-sm mt-1">Variant: ${mode}</p>`);
+
+    const url = buildUrl(setNumber, mode);
+
+    // Pre-flight existence check
+    const exists = await fileExists(url);
+    if (!exists) {
+      showOverlay(`
+        <svg class="w-12 h-12 mx-auto mb-3 text-red-400 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        <p class="text-slate-200 font-semibold">File doesn't exist.</p>
+        <p class="text-slate-500 text-sm mt-1">No 3D model for set <strong>${setNumber}</strong>.</p>
+      `);
+      viewer.removeAttribute('src');
+      return;
+    }
+
+    viewer.setAttribute('src', url);
+    if (mode === 'animated') {
+      viewer.setAttribute('autoplay', '');
+    } else {
+      viewer.removeAttribute('autoplay');
+    }
+  }
+
+  // model-viewer load events
+  viewer.addEventListener('load', () => {
+    hideOverlay();
+    showStatus('info', `Loaded set <strong>${setInput.value.trim()}</strong> · variant <strong>${mode}</strong>.`);
+  });
+  viewer.addEventListener('error', (e) => {
+    showOverlay(`
+      <svg class="w-12 h-12 mx-auto mb-3 text-red-400 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <p class="text-slate-200 font-semibold">Couldn't render that model.</p>
+    `);
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const v = setInput.value.trim();
+    if (!v) { showStatus('error', 'Please enter a set number.'); return; }
+    loadSet(v);
+  });
+
+  resetBtn.addEventListener('click', () => {
+    if (viewer.getAttribute('src')) {
+      // Reset camera to default framing
+      viewer.cameraOrbit = 'auto auto auto';
+      viewer.cameraTarget = 'auto auto auto';
+      viewer.fieldOfView = 'auto';
+      viewer.jumpCameraToGoal && viewer.jumpCameraToGoal();
+    }
+  });
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('mode') === 'animated') setMode('animated');
+  if (params.get('set')) {
+    setInput.value = params.get('set');
+    loadSet(params.get('set'));
+  }
+})();
+</script>
+</body>
+</html>
